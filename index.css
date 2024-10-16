@@ -7,14 +7,20 @@
     --aqua: #86fbfb;
     --white: #f7f8fa;
     --font-size: 1.3rem;
-    --mono: "Oxygen mono", monospace;
-    --sans: "Dosis", sans-serif;
+    --mono: "JetBrainsMono", monospace;
+    --sans: "PTSans", sans-serif;
 }
 
 @font-face {
-    font-family: "Dosis";
-    src: url("./Dosis-Regular.ttf");
+    font-family: "PTSans";
+    src: url("./PTSans-Regular.ttf");
 }
+
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url("./JetBrainsMono-Regular.ttf");
+}
+
 
 html {
     box-sizing: border-box;
@@ -30,7 +36,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--sans);
-    background-color: var(--black);
+    background-color: var(--plum);
     color: var(--white);
     font-size: var(--font-size);
 }
@@ -39,16 +45,6 @@ h1,h2, h3 {
     margin: 0;
 }
 
-section {
-    /* background-color: blue; */
-}
-
-.d {
-    margin: 16px;
-    background-color: pink;
-}
-
-
 a {
     color: var(--magenta);
 }
@@ -56,4 +52,87 @@ a {
 a:hover {
     color: var(--hotmag);
     text-decoration: none;
+}
+
+/* intro styles */
+
+#intro {
+    padding-bottom: 10rem;
+}
+
+
+#intro p {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+#intro .name {
+    font-family: var(--mono);
+}
+
+
+#intro .name span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--aqua);
+    display: block;
+}
+
+#intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+#contact-me {
+    padding-bottom: 10rem;
+    /* background-color: var(--magenta); */
+    text-align: center;
+}
+
+#contact-me h2 {
+    font-size: 3rem;
+    
+}
+
+#contact-me a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+nav a { 
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    color: var(--magenta);
 }
