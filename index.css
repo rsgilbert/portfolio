@@ -136,3 +136,19 @@ nav a {
 nav a:hover {
     color: var(--magenta);
 }
+
+.link-with-image {
+    display: flex;
+    align-items: center;
+}
+
+.link-with-image img {
+    margin-right: 4px;
+}
+
+
+/* attribute selector. Looks for one of the attributes inside the html tag */
+nav [class*="fa-"] {
+    font-size: 150%;
+    color: var(--aqua);
+}
