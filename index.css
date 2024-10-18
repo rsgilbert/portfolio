@@ -159,3 +159,58 @@ nav [class*="fa-"]:hover  {
     margin-right: 8px;
 }
 
+.button {
+    background-color: var(--magenta);
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.button:hover {
+    color: var(--white);
+    background-color: var(--hotmag);
+}
+
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 16px;
+}
+
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;   
+}
+
+footer [class*="fa-"] {
+    font-size: 150%;
+}
+
+footer ul li {
+    font-size: large;
+    margin-right: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media(min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+  
+}
