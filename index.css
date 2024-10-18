@@ -6,7 +6,7 @@
     --magenta: #e310cb;
     --aqua: #86fbfb;
     --white: #f7f8fa;
-    --font-size: 1.3rem;
+    --font-size: 1.2rem;
     --mono: "JetBrainsMono", monospace;
     --sans: "PTSans", sans-serif;
 }
@@ -133,18 +133,7 @@ nav a {
     display: block;
 }
 
-nav a:hover {
-    color: var(--magenta);
-}
 
-.link-with-image {
-    display: flex;
-    align-items: center;
-}
-
-.link-with-image img {
-    margin-right: 4px;
-}
 
 
 /* attribute selector. Looks for one of the attributes inside the html tag */
@@ -152,3 +141,21 @@ nav [class*="fa-"] {
     font-size: 150%;
     color: var(--aqua);
 }
+
+nav a:hover,
+nav [class*="fa-"]:hover  {
+    color: var(--magenta);
+}
+
+.fullname-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fullname-link img {
+    margin-right: 8px;
+}
+
