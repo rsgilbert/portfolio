@@ -184,7 +184,9 @@ footer ul {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    list-style: none;   
+    list-style: none;  
+    flex-flow: row wrap;
+    gap: 3em; 
 }
 
 footer [class*="fa-"] {
@@ -193,7 +195,6 @@ footer [class*="fa-"] {
 
 footer ul li {
     font-size: large;
-    margin-right: 16px;
 }
 
 footer p {
