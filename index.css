@@ -56,12 +56,21 @@ a:hover {
     text-decoration: none;
 }
 
+a.selected {
+    color: var(--hotmag);
+}
+
+
 
 /* 
 background section colors
 */
 .section-plum {
     background-color: var(--plum);
+}
+
+.section-dkblue {
+    background-color: var(--dkblue);
 }
 
 .gradient {
@@ -108,6 +117,100 @@ background section colors
 }
 
 /* End of Intro section */
+
+/* Projects section */
+#projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3 {
+    color: var(--aqua);
+    margin: 1rem 0;
+}
+
+#projects h4 {
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+#projects .blackbox {
+    background-color: var(--black);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.5;
+
+}
+
+#projects p {
+    padding: 0;
+    margin: 0;
+}
+
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    flex-flow: row wrap;
+    font-size: 1rem;
+    justify-content: flex-end;
+
+}
+
+#projects img {
+    margin: 2rem 0 4rem 0;
+    border-left: 1px solid var(--aqua);
+    border-top: 1px solid var(--aqua);
+    padding: 0.5rem;
+    border-radius: 16px;
+    max-width: calc(100% - 0.5rem - 0.5rem);
+}
+
+@media(min-width: 550px) {
+    article {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1rem;
+    }
+    
+    #projects img {
+        grid-column: 1/6;
+        grid-row: 1/2;
+        
+    }
+
+    #projects .reversed img {
+        grid-column: 6/11;
+    }
+
+    .text {
+        order: 2;
+        text-align: right;
+        grid-column: 5/11;
+        grid-row: 1/2;
+    }
+
+    #projects .reversed .text {
+        text-align: start;
+        grid-column: 1/7;
+    }
+  
+    #projects .reversed ul {
+        justify-content: flex-start;
+    }
+}
+
+/* End of projects section */
 
 /* Contact section */
 #contact-me {
@@ -201,7 +304,7 @@ nav [class*="fa-"]:hover {
     background-color: var(--hotmag);
 }
 
-
+/* footer */
 footer {
     background-color: var(--black);
     color: var(--white);
@@ -209,6 +312,9 @@ footer {
     padding: 4rem 0;
 }
 
+footer h2 {
+    font-size: 1.2rem;
+}
 
 footer ul {
     display: flex;
@@ -232,6 +338,7 @@ footer p {
     margin: 0;
 }
 
+/* end of footer */
 
 @media(min-width: 850px) {
     nav {
